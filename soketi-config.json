@@ -1,25 +1,27 @@
 {
     "port": 6001,
     "debug": true,
-    "appManager.driver": "sql",
-    "appManager.mysql": {
-        "host": "127.0.0.1",
-        "user": "root",
-        "password": "",
-        "database": "pusher_clone",
-        "port": 3306,
-        "table_name": "apps",
-        "key_column": "key",
-        "secret_column": "secret",
-        "id_column": "id",
-        "max_connections_column": "max_connections",
-        "allowed_origins_column": "allowed_origins",
-        "auth_host_column": "auth_host",
-        "auth_key_column": "auth_key",
-        "enable_client_messages_column": "enable_client_messages",
-        "enabled_column": "enabled",
-        "max_backend_events_per_sec_column": "max_backend_events_per_sec",
-        "max_client_events_per_sec_column": "max_client_events_per_sec",
-        "max_read_requests_per_sec_column": "max_read_requests_per_sec"
+    "appManager": {
+        "driver": "sql",
+        "mysql": {
+            "host": "127.0.0.1",
+            "user": "root",
+            "password": "",
+            "database": "pusher_clone",
+            "port": 3306,
+            "table_name": "apps",
+            "key_column": "key",
+            "secret_column": "secret",
+            "id_column": "id",
+            "max_connections_column": "max_connections",
+            "allowed_origins_column": "allowed_origins",
+            "auth_host_column": "auth_host",
+            "auth_key_column": "auth_key",
+            "enable_client_messages_column": "enable_client_messages",
+            "enabled_column": "enabled",
+            "max_backend_events_per_sec_column": "max_backend_events_per_sec",
+            "max_client_events_per_sec_column": "max_client_events_per_sec",
+            "max_read_requests_per_sec_column": "max_read_requests_per_sec"
+        }
     }
 }
